@@ -1,6 +1,8 @@
 //Task 3 Mads
-//init global variable since draw function updates frame once per cycle
+//init global variable
+
 int state = 0;
+
 //3.a
 color backGround = color(0);
 color red = color(255, 0, 0);
@@ -16,13 +18,14 @@ void setup()
   size(150, 450);
   background(backGround);
   ellipseMode(CENTER);
-  frameRate(1);
 }
 
 void draw()
 {
+  //Dont use framrate to control animation
+  //-Use frameCounter%100 ie. to time states
   //state 0 red; state 1; red+amber; state 2 green; state 3 amber
-  if (state == 0)
+  if (state == 100)
   {
     //top
     fill(red);
@@ -33,7 +36,7 @@ void draw()
     //bottom
     fill(turnOff);
     ellipse(width/2, height/2 + 150, 150, 150);
-  } else if (state == 2)
+  } else if (state == 200)
   {
 
     fill(red);
@@ -44,7 +47,7 @@ void draw()
     //bottom
     fill(turnOff);
     ellipse(width/2, height/2 + 150, 150, 150);
-  } else if (state == 3)
+  } else if (state == 300)
   {
 
     fill(turnOff);
@@ -55,7 +58,7 @@ void draw()
     //bottom
     fill(green);
     ellipse(width/2, height/2 + 150, 150, 150);
-  } else if (state == 4)
+  } else if (state == 400)
   {
 
     fill(turnOff);
@@ -64,13 +67,13 @@ void draw()
     fill(amber);
     ellipse(width/2, height/2, 150, 150);
     //bottom
-    fill(turnOff);
+    fill(green);
     ellipse(width/2, height/2 + 150, 150, 150);
   }
   state++;
   
   //reset state
-  if (state > 4)
+  if (state > 400)
   {
     state = 0;
   }

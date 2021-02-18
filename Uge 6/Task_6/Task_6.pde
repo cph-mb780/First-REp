@@ -21,16 +21,18 @@ int z = 8;
 
 boolean passTest = true;
 
+//check if xyz are within limits
 if (x == 10 || x == 20 || x == 30)
 {
   passTest = false;
 } else if (y == 10 || y == 20 || y == 30)
-{
+{          
   passTest = false;
 } else if (z == 10 || z == 20 || z == 30)
 {
   passTest = false;
 }
+
 
 if (passTest == true && x + y + z == 30)
 {
