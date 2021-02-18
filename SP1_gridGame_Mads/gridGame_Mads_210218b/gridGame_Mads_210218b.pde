@@ -1,5 +1,18 @@
 import processing.sound.*;
 SoundFile gameOver;
+SoundFile doh;
+SoundFile woho;
+
+// Set number of enemies:
+int numEnemies = 4;
+
+//Set amount of foodd
+int numFood = 4;
+
+
+
+
+
 
 int gridSize = 40;
 int [][] grid = new int[25][25];
@@ -11,14 +24,16 @@ float ranFood= random(1);
 
 
 Player player;
-Enemy [] enemy = new Enemy[4];
-Food [] food = new Food[4];
+Enemy [] enemy = new Enemy[numEnemies];
+Food [] food = new Food[numFood];
 
 
 void setup()
 {
   size(1001, 1001);
   gameOver = new SoundFile(this, "gameover.mp3");
+  doh = new SoundFile(this, "doh.mp3");
+  woho = new SoundFile(this, "woho.mp3");
   player = new Player(startPosX(), startPosY());
 
   for (int i = 0; i < enemy.length; i++)
@@ -102,7 +117,7 @@ void updateGrid()
 
   grid[player.x][player.y] = player.colorState;
 
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < food.length; i++)
   {
     grid[food[i].x][food[i].y] = food[i].colorState;
   }
@@ -121,7 +136,7 @@ void updateGrid()
 
   if (frameCount%20 == 0)
   {
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < food.length; i++)
     {
       food[i].moveAwayFromPlayer();
     }
@@ -146,10 +161,11 @@ int startPosY()
 
 void resolveCollisions()
 {
-  for ( int i = 0; i < 4; i++)
+  for ( int i = 0; i < food.length; i++)
   {
     if (player.x == food[i].x && player.y == food[i].y)
     {
+      woho.play();
       player.heal();
       player.increaseScore();
       food[i] = new Food(startPosX(), startPosY(), player);
@@ -160,6 +176,12 @@ void resolveCollisions()
   {
     if (player.x == enemy[i].x && player.y == enemy[i].y)
     {
+      //The sound plays to the end without interruption
+      if (!doh.isPlaying())
+      {
+        doh.rate(0.7);
+        doh.play();
+      }
       player.takeDamage();
     }
   }

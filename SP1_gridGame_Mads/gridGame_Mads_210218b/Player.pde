@@ -30,7 +30,7 @@ int score;
   {
     if (health < 100)
     {
-    health += 10;
+    health += 1;
     } else if (health >= 100)
     {
       health = 100;

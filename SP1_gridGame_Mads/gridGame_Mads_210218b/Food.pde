@@ -22,7 +22,7 @@ class Food
     if (randomMove > 0.40)
     {
 
-      for (int i = 0; i < 4; i++)
+      for (int i = 0; i < food.length; i++)
       {
         if (xDistance > yDistance)
         {
