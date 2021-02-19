@@ -6,7 +6,7 @@ SoundFile woho;
 // Set number of enemies:
 int numEnemies = 4;
 
-//Set amount of foodd
+//Set amount of food
 int numFood = 4;
 
 
@@ -31,9 +31,15 @@ Food [] food = new Food[numFood];
 void setup()
 {
   size(1001, 1001);
+
   gameOver = new SoundFile(this, "gameover.mp3");
+  gameOver.rate(1.0);
+
   doh = new SoundFile(this, "doh.mp3");
+  doh.rate(0.7);
+
   woho = new SoundFile(this, "woho.mp3");
+  woho.rate(1.0);
   player = new Player(startPosX(), startPosY());
 
   for (int i = 0; i < enemy.length; i++)
@@ -179,7 +185,7 @@ void resolveCollisions()
       //The sound plays to the end without interruption
       if (!doh.isPlaying())
       {
-        doh.rate(0.7);
+        //doh.rate(0.7);
         doh.play();
       }
       player.takeDamage();

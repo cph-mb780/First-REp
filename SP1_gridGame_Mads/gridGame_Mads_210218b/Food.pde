@@ -24,7 +24,7 @@ class Food
 
       for (int i = 0; i < food.length; i++)
       {
-        if (xDistance > yDistance)
+        if (xDistance >= yDistance)
         {
 
           if (player.x > food[i].x && x > 0)
@@ -58,10 +58,10 @@ class Food
     if (prob > 0.75 && x < 24)
     {
       x++;
-    } else if (prob <= 0.75 && x > 0)
+    } else if (prob > 0.5 && prob <= 0.75 && x > 0)
     {
       x--;
-    } else if (prob <=0.5 && y < 24)
+    } else if (prob > 0.25 && prob <=0.5 && y < 24)
     {
       y++;
     } else if (prob <= 0.25 && y > 0)

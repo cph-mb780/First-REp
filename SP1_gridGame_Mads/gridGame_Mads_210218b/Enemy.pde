@@ -23,9 +23,9 @@ class Enemy
     if (randomMove > 0.25)
     {
 
-      for (int i = 0; i < 4; i++)
+      for (int i = 0; i < enemy.length; i++)
       {
-        if (xDistance > yDistance)
+        if (xDistance >= yDistance)
         {
 
           if (player.x > enemy[i].x && x < 24)
@@ -54,14 +54,14 @@ class Enemy
 
   void probMove()
   {
-    float prob = random(0, 1);
+    float prob = random(1);
     if (prob > 0.75 && x < 24)
     {
       x++;
-    } else if (prob <= 0.75 && x > 0)
+    } else if (prob > 0.5 && prob <= 0.75 && x > 0)
     {
       x--;
-    } else if (prob <=0.5 && y < 24)
+    } else if (prob > 0.25 && prob <=0.5 && y < 24)
     {
       y++;
     } else if (prob <= 0.25 && y > 0)
