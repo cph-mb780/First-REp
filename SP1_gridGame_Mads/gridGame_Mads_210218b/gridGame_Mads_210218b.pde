@@ -31,15 +31,15 @@ Food [] food = new Food[numFood];
 void setup()
 {
   size(1001, 1001);
-
+  
+//setup game sounds
   gameOver = new SoundFile(this, "gameover.mp3");
   gameOver.rate(1.0);
-
   doh = new SoundFile(this, "doh.mp3");
   doh.rate(0.7);
-
   woho = new SoundFile(this, "woho.mp3");
   woho.rate(1.0);
+  
   player = new Player(startPosX(), startPosY());
 
   for (int i = 0; i < enemy.length; i++)
@@ -118,6 +118,7 @@ color setGridColor(int colorState)
   return c;
 }
 
+//Updates enemies and food positions
 void updateGrid()
 {
 
@@ -150,7 +151,7 @@ void updateGrid()
 }
 
 
-
+//Random start position
 int startPosX()
 {
   startX = (int)random(grid.length);
@@ -165,6 +166,7 @@ int startPosY()
   return startY;
 }
 
+//Checks if player collides with food or enemies
 void resolveCollisions()
 {
   for ( int i = 0; i < food.length; i++)
@@ -204,6 +206,8 @@ boolean isGameOver()
     return false;
   }
 }
+
+//Controls
 void keyPressed()
 {
   if (key == 'w' && player.y != 0)
