@@ -40,4 +40,21 @@ void increaseScore()
 {
   score+=10;
 }
+void controlPlayer()
+{
+if (keyPressed) {
+    if (key == 'w' && this.y > 0) {
+      player.y--;
+    } 
+    else if (key == 's' && this.y < 24) {
+      player.y++;
+    } 
+    else if(key == 'a' && this.x > 0){
+      player.x--;
+    }
+    else if(key == 'd' && this.x < 24){
+     player.x++; 
+    }
+  }
+}
 }    

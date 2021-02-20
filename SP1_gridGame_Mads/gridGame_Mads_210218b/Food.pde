@@ -19,7 +19,7 @@ class Food
     int yDistance = Math.abs(player.y - y);
 
 
-    if (randomMove > 0.25)
+    if (randomMove > 0.25 && randomMove <= 1.0)
     {
 
       for (int i = 0; i < food.length; i++)
@@ -45,7 +45,7 @@ class Food
           }
         }
       }
-    } else
+    } else if (randomMove <= 0.25)
     {
       probMove();
     }

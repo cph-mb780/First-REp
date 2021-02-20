@@ -18,8 +18,7 @@ int gridSize = 40;
 int [][] grid = new int[25][25];
 int startX;
 int startY;
-//Random float to determine food location
-float ranFood= random(1);
+
 
 
 
@@ -60,6 +59,7 @@ void draw()
   clearBoard();
   updateGrid();
   drawBoard();
+  player.controlPlayer();
   resolveCollisions();
   showScore();
   showHealth();
@@ -112,7 +112,7 @@ color setGridColor(int colorState)
     break;
 
   case 4:
-    c = color (255, 0, 0);
+    c = color (random(100,255), random(50,100), random(50,100));
     break;
   }
   return c;
@@ -204,27 +204,6 @@ boolean isGameOver()
   } else
   {
     return false;
-  }
-}
-
-//Controls
-void keyPressed()
-{
-  if (key == 'w' && player.y != 0)
-  {
-    player.y--;
-  }
-  if (key == 's' && player.y < 24)
-  {
-    player.y++;
-  }
-  if (key == 'a' && player.x != 0)
-  {
-    player.x--;
-  }
-  if (key == 'd' && player.x < 24)
-  {
-    player.x++;
   }
 }
 

@@ -46,7 +46,7 @@ class Enemy
           }
         }
       }
-    } else
+    } else if (randomMove <= 0.25)
     {
       probMove();
     }
