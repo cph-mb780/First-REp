@@ -112,7 +112,7 @@ color setGridColor(int colorState)
     break;
 
   case 4:
-    c = color (random(100,255), random(50,100), random(50,100));
+    c = color (random(100,255), random(50), random(50));
     break;
   }
   return c;
