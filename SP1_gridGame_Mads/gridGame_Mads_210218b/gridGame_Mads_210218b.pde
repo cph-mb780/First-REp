@@ -39,8 +39,11 @@ void setup()
   woho = new SoundFile(this, "woho.mp3");
   woho.rate(1.0);
   
+  //Player start position
   player = new Player(startPosX(), startPosY());
-
+  
+  
+//Enemy and Food start position
   for (int i = 0; i < enemy.length; i++)
   {
     enemy[i] = new Enemy(startPosX(), startPosY(), player);
