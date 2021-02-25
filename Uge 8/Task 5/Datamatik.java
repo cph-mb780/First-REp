@@ -24,25 +24,44 @@ class Datamatik
 		studentArray[1] = new Student("Frederik",23,false,6);
 		studentArray[2] = new Student("Inga",28,true,6);
 		studentArray[3] = new Student("Asger",24,false,6);
-	 	studentArray[4] = new Student("Bjarke",28,false,5);
+		studentArray[4] = new Student("Bjarke",28,false,5);
 		studentArray[5] = new Student("Leo",24,false,5);
 		studentArray[6] = new Student("Mohammed",24,false,5);
 		studentArray[7] = new Student("Mie",21,true,4);
 		studentArray[8] = new Student("Cleve",25,false,4);
 		studentArray[9] = new Student("Bentsen",21,false,2);
 
+
 		
 		for (int i = 0; i < studentArray.length; i++)
-			{		System.out.println(arrNames(studentArray,i));
-		//System.out.println(studentArray[0].name);
-			}
-		
+		{		
+			System.out.println(arrNames(studentArray,i));
 
-	
+		}
+		
+		System.out.println(indexStudent("Cleve"));
+		System.out.println(indexStudent("Leo"));
+		System.out.println(indexStudent("Mohammed"));
+		System.out.println(indexStudent("Asger"));
+
+
 	}
 	public static String arrNames(Student[] studentInfo, int studentNum)
 	{
 		String name = studentArray[studentNum].name;
 		return name;
+	}
+
+	public static int indexStudent(String name)
+	{
+		int indexStud = 0;
+		for (int i = 0; i < studentArray.length; i++)
+		{
+			if(studentArray[i].name.equals(name))
+			{
+				indexStud = i;
+			}
+		}
+		return indexStud;
 	}
 }
