@@ -10,12 +10,29 @@
 
 class Array
 {
-	public static void intArrMethod(int [] intInputArr)
+	public static int intArrSum(int [] intInputArr)
 	{
+		int sum = 0;
 		for (int i = 0; i < intInputArr.length; i++)
-		{
-			 System.out.println(intInputArr[i]);
+		{	
+			
+			sum = sum + intInputArr[i];
+
 		}
+		return sum;
+	}
+
+	public static int intArrAverage (int [] inputAverage)
+	{
+		int sum = 0;
+		int averageSum = 0;
+		int arrLength = inputAverage.length;
+		for (int i = 0; i < inputAverage.length; i++)
+		{
+			sum = sum + inputAverage[i];
+		}
+		averageSum = sum / (arrLength);
+		return averageSum;
 	}
 
 
@@ -27,15 +44,43 @@ class Array
 		}
 	}
 
+	public static void sortArr(int[] inputArr)
+	{
+		int tmp = 0;
+
+		for(int i = 0; i < inputArr.length; i++)
+		{
+			for (int j = i + 1; j < inputArr.length; j++)
+			{
+				
+				if (inputArr[i] > inputArr[j])
+				{
+					tmp = inputArr[i];
+					inputArr[i] = inputArr[j];
+					inputArr[j] = tmp;
+				}
+			}
+			System.out.println(inputArr[i]);
+		}
+
+	}
+
 
 	public static void main(String[] args)
 	{
-		int [] intArray = {3, 5, 6};
+		int[] arr = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
+		int [] intArray = {10, 9, 11};
 		String [] stringArray = {"Mads", "Eske", "Rabee"};
 		boolean [] boolArray = {true, true, false};
 
-	stringArr(stringArray);
+		stringArr(stringArray);
 
+		int sumFromArray = intArrSum(intArray);
+		System.out.println(sumFromArray);
+		int averageArray = intArrAverage(intArray);
+		System.out.println(averageArray);
+
+		sortArr(arr);
 		
 	}
 
