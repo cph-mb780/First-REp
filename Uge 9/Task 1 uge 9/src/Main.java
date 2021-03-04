@@ -69,9 +69,9 @@ public class Main {
     }
 
     //skriv dine metoder herunder:
-/*runs through row word, then char and if isConsonant is true
+    /*runs through row word, then char and if isConsonant is true
 
- */
+     */
     public static void printWordsWithDoubleConsonant() {
         for (int i = 0; i < text[i].length; i++) {
             for (String s : text[i]) {
@@ -94,7 +94,7 @@ public class Main {
     public static boolean isConsonant(char x) {
         char c = Character.toLowerCase(x);
         if (x =='b' || x =='c'|| x =='d' || x =='f' || x =='g' || x =='h' || x =='j' || x =='k' || x =='l' ||x =='m'
-         || x =='n' || x =='p' || x =='q' || x =='r' || x =='s' || x =='t'|| x =='v' || x =='w' || x =='x' || x =='z')
+                || x =='n' || x =='p' || x =='q' || x =='r' || x =='s' || x =='t'|| x =='v' || x =='w' || x =='x' || x =='z')
         {
             return true;
         } else

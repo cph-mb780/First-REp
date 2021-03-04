@@ -2,11 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6529ba45-d506-41ad-bd4a-39c99032ae78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Uge 9/Uge 9.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uge 8/Task 2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 8/Task 2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uge 8/Task 4/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 8/Task 4/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uge 8/Task 5/Datamatik.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 8/Task 5/Datamatik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uge 8/Task 6/Oops.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 8/Task 6/Oops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 9/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 9/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/Task 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/out/production/Task 2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/out/production/Task 2/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 2/src/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/Task 3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/out/production/Task 3/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 3/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/Task 4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/out/production/Task 4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/Task 4/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/out/production/Uge 9/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/out/production/Uge 9/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Uge 9/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Uge 9/src/data.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +114,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Uge 9/Task 1 uge 9" />
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -115,5 +157,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
