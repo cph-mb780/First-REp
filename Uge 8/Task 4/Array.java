@@ -10,7 +10,28 @@
 
 class Array
 {
-	public static int intArrSum(int [] intInputArr)
+	
+
+	public static void main(String[] args)
+	{
+		int[] arr = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
+		int [] intArray = {10, 9, 11};
+		String [] stringArray = {"Mads", "Eske", "Rabee"};
+		boolean [] boolArray = {true, true, false};
+
+		stringArr(stringArray);
+
+		int sumFromArray = intArrSum(intArray);
+		System.out.println(sumFromArray);
+		int averageArray = intArrAverage(intArray);
+		System.out.println(averageArray);
+
+		sortArr(arr);
+		
+	}
+
+
+public static int intArrSum(int [] intInputArr)
 	{
 		int sum = 0;
 		for (int i = 0; i < intInputArr.length; i++)
@@ -44,6 +65,7 @@ class Array
 		}
 	}
 
+	//Bubble sort
 	public static void sortArr(int[] inputArr)
 	{
 		int tmp = 0;
@@ -65,24 +87,4 @@ class Array
 
 	}
 
-
-	public static void main(String[] args)
-	{
-		int[] arr = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
-		int [] intArray = {10, 9, 11};
-		String [] stringArray = {"Mads", "Eske", "Rabee"};
-		boolean [] boolArray = {true, true, false};
-
-		stringArr(stringArray);
-
-		int sumFromArray = intArrSum(intArray);
-		System.out.println(sumFromArray);
-		int averageArray = intArrAverage(intArray);
-		System.out.println(averageArray);
-
-		sortArr(arr);
-		
-	}
-
-	
 }

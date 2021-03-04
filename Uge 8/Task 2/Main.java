@@ -21,6 +21,9 @@ class Main{
 
    System.out.println(toUpper("dette er skrevet i lowercase"));
 
+   
+
+
    if(firstChar("mAds"))
    {
     System.out.println("First letter IS uppercase");

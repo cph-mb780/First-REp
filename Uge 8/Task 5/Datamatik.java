@@ -48,7 +48,7 @@ class Datamatik
 	}
 	public static String arrNames(Student[] studentInfo, int studentNum)
 	{
-		String name = studentArray[studentNum].name;
+		String name = studentInfo[studentNum].name;
 		return name;
 	}
 
