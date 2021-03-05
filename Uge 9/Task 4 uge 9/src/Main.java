@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        printIfPalindrome("abb Bba");
+        printIfPalindrome("Abba");
     }
 
     public static void printIfPalindrome(String sentence)
@@ -13,7 +13,7 @@ public class Main {
         int i = 0;
         int j = lowerSentence.length()-1;
 
-        while(i != j)
+        while(i < j)
         {
             if(lowerSentence.charAt(i) == lowerSentence.charAt(j))
             {

@@ -10,7 +10,7 @@ public class Main {
 
         // write your code here
         String longSentence = getLongest();
-        System.out.println("The longest sentence is: " +longSentence);
+        System.out.println("The longest sentence is: " +longSentence + "\n with a length of: " + longSentence.length());
 
 
     }
@@ -29,6 +29,7 @@ public class Main {
                 if(sentence.length() > longestSentence.length())
                 {
                     longestSentence = sentence;
+
                 }
             }
             i++;

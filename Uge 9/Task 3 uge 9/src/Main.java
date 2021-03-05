@@ -2,14 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        printPartOfWord("København", 6, 4);
+        printPartOfWord("København", 6,4 );
     }
 
     public static void printPartOfWord(String word, int start, int stop) {
 
 
         try {
-            System.out.println(word.substring(start, stop+1));
+            System.out.println(word.substring(start, stop));
 
 
         } catch (StringIndexOutOfBoundsException e) {
