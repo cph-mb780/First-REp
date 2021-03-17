@@ -19,9 +19,9 @@ public class Main {
         }
 
         // todo: print alle ord der starter med det der sendes med som argument,
-        printWordsStartingWith("Ø");
+        //printWordsStartingWith("Ø");
         //todo: print alle ord der har præcis det antal bogstaver der sendes med som argument (inkluderer IKKE tal og tegnene '.' og ',')
-        printWordsOfLength(3);
+        //printWordsOfLength(3);
 
 
         //test dine metoder ved at kalde dem her:
@@ -76,10 +76,11 @@ public class Main {
         for (int i = 0; i < text[i].length; i++) {
             for (String s : text[i]) {
                 for (int j = 0; j < s.length(); j++) {
+
                     char k = s.charAt(j);
-                    if (isConsonant(k) && j > 0) {
-                        char prevChar = s.charAt(j - 1);
-                        if (k == prevChar)
+                    if (isConsonant(k)) {
+                        char nextChar = s.charAt(j+1);
+                        if (k == nextChar)
                         {
                             System.out.println(s);
                         }
