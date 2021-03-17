@@ -9,7 +9,7 @@ public class Dog {
         this.name = name;
         this.owner = owner;
         this.isHungry = true;
-        offSpring = new String[1];
+        offSpring = new String[2];
     }
 
     public String feedDog()
